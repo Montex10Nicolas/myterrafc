@@ -98,14 +98,16 @@ ServerEvents.recipes(event => {
       L: `afc:wood/log/${log}`
     }, 0, 0
     );
+  });
 
-    event.recipes.tfc.advanced_shapeless_crafting(
+  event.recipes.tfc.damage_inputs_shapeless_crafting(
+    event.recipes.minecraft.crafting_shapeless(
       Item.of("tfc:wood/lumber/oak", 8),
       [
         "afc:wood/log/black_oak",
         "#tfc:saws"
       ]
-    );
-  })
+    )
+  )
 });
 
