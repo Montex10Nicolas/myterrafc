@@ -51,8 +51,16 @@ ServerEvents.tags('item', event => {
 ServerEvents.tags('block', event => {
   event.add('creepycrawlies:worms_can_spawn_on', '#tfc:mud');
 
-  const mineable_with_scythe = ['kubastfca:crop/sunflower', 'kubastfca:seeds/sunflower', 'kubastfca:dead_crop/sunflower']
-  mineable_with_scythe.map((seed) => {
+  const kubastfcaMineable = [
+    'kubastfca:crop/sunflower',
+    'kubastfca:seeds/sunflower',
+    'kubastfca:dead_crop/sunflower',
+    'kubastfca:dead_crop/tea',
+    'kubastfca:crop/tea',
+    'kubastfca:seeds/tea',
+  ]
+  kubastfcaMineable.map((seed) => {
     event.add('tfc:mineable_with_scythe', seed);
+    event.add('tfc:mineable_with_knife', seed);
   })
 });
