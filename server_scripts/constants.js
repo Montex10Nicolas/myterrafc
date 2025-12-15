@@ -45,3 +45,13 @@ const afcLogs = [
   "rubber_fig",
   "poplar"
 ];
+
+const rockType = ["loose", "mossy_loose"];
+
+const dfcRocks = [
+  "travertine",
+  "serpentine",
+  "arkose",
+  "blueschist",
+  "tuff"
+];

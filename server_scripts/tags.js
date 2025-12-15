@@ -45,6 +45,12 @@ ServerEvents.tags('item', event => {
     })
   });
 
+  rockType.map(type => {
+    dfcRocks.map(rock => {
+      event.add('rnr:loose_rock_items', `dfc:rock/${type}/${rock}`);
+    })
+  })
+
 
 });
 
