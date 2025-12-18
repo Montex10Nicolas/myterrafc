@@ -8,4 +8,8 @@ LootJS.modifiers((event) => {
   event
     .addBlockLootModifier("kubastfca:crop/sunflower")
     .addLoot("kubastfca:seeds/sunflower");
+
+  event
+    .addEntityLootModifier("minecraft:spider")
+    .removeLoot("minecraft:spider_eye");
 });

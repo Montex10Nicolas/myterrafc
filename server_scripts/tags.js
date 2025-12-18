@@ -18,8 +18,11 @@ ServerEvents.tags('item', event => {
   event.add('tfc:usable_on_tool_rack', 'mcw_tfc_aio:pliers');
   event.add('tfc:usable_on_tool_rack', 'tfc:wool_cloth');
 
-  event.add('curios:clothes_socks', 'sns:black_steel_toe_hiking_boots');
-  event.add('curios:clothes_socks', 'tfc:metal/boots/black_steel');
+  const clothes = ['sns:black_steel_toe_hiking_boots', 'tfc:metal/boots/black_steel', 'tfc:metal/boots/red_steel'];
+
+  clothes.map(boot => {
+    event.add('curios:clothes_socks', boot);
+  })
 
   event.add('sns:allowed_in_seed_pouch', 'kubastfca:seeds/tea');
   event.add('sns:allowed_in_seed_pouch', '#tfc:wild_fruits');
@@ -49,9 +52,7 @@ ServerEvents.tags('item', event => {
     dfcRocks.map(rock => {
       event.add('rnr:loose_rock_items', `dfc:rock/${type}/${rock}`);
     })
-  })
-
-
+  });
 });
 
 ServerEvents.tags('block', event => {
@@ -69,4 +70,5 @@ ServerEvents.tags('block', event => {
     event.add('tfc:mineable_with_scythe', seed);
     event.add('tfc:mineable_with_knife', seed);
   })
-});
+})
+
