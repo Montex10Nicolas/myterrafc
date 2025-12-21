@@ -13,6 +13,7 @@ ServerEvents.recipes(event => {
     B: 'tfc_knapsacks:backpack',
   }, 0, 0
   );
+
   event.recipes.tfc.advanced_shaped_crafting(
     Item.of('sophisticatedbackpacks:iron_backpack', 1), [
     'III',
@@ -108,6 +109,61 @@ ServerEvents.recipes(event => {
         "#tfc:saws"
       ]
     )
-  )
+  );
+
+  event.recipes.tfc.advanced_shaped_crafting(
+    'firmalife:barrel_stave', [
+    'TTS',
+    'H'
+  ], {
+    T: 'minecraft:dirt',
+    S: 'minecraft:dirt',
+    H: 'minecraft:dirt',
+  }, 0, 0
+  );
+
+  event.recipes.tfc.advanced_shaped_crafting(
+    Item.of('minecraft:hopper', 4), [
+    'S S',
+    ' C '
+  ], {
+    S: 'tfc:metal/sheet/black_steel',
+    C: 'minecraft:chest'
+  }, 0, 0
+  );
+
+  event.recipes.tfc.advanced_shaped_crafting(
+    Item.of('minecraft:hopper', 6), [
+    'S S',
+    ' C '
+  ], {
+    S: 'tfc:metal/sheet/red_steel',
+    C: 'minecraft:chest'
+  }, 0, 0
+  );
+
+  event.recipes.tfc.advanced_shaped_crafting(
+    Item.of('minecraft:hopper', 6), [
+    'S S',
+    ' C '
+  ], {
+    S: 'tfc:metal/sheet/blue_steel',
+    C: 'minecraft:chest'
+  }, 0, 0
+  );
+
+  const steel_sheets = ['black_steel', 'red_steel', 'blue_steel'];
+  steel_sheets.forEach((sheet, index) => {
+    event.recipes.tfc.advanced_shaped_crafting(
+      Item.of('firmalife:barrel_stave', index ? 4 : 2), [
+      'TTS',
+      'H  '
+    ], {
+      S: `tfc:metal/sheet/${sheet}`,
+      T: 'firmalife:treated_lumber',
+      H: '#tfc:hammers'
+    }, 0, 0
+    );
+  })
 });
 

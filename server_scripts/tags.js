@@ -21,7 +21,9 @@ ServerEvents.tags('item', event => {
   const clothes = ['sns:black_steel_toe_hiking_boots', 'tfc:metal/boots/black_steel', 'tfc:metal/boots/red_steel'];
 
   clothes.map(boot => {
+
     event.add('curios:clothes_socks', boot);
+    event.add('minecraft:freeze_immune_wearables', boot);
   })
 
   event.add('sns:allowed_in_seed_pouch', 'kubastfca:seeds/tea');
