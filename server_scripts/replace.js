@@ -14,9 +14,18 @@ ServerEvents.recipes(event => {
   }, {
     tag: "tfc:rock/bricks"
   });
+  event.replaceInput({ mod: "dawnoftimebuilder" }, {
+    item: "minecraft:ink_sac"
+  }, {
+    item: "minecraft:black_dye"
+  });
   event.replaceInput({ output: "mcw_tfc_aio:bridges/bamboo_bridges/dry_bamboo_bridge_pier" },
     "minecraft:string",
     { tag: "forge:string" }
+  );
+  event.replaceInput({ mod: "chalk" },
+    "minecraft:slime_ball",
+    { item: "tfc:glue" }
   );
 
   event.replaceInput({ mod: "mcw_tfc_aio" },
@@ -26,4 +35,6 @@ ServerEvents.recipes(event => {
   event.replaceInput({ mod: "dawnoftimebuilder" },
     'minecraft:torch',
     'tfc:torch');
+
+  event.replaceInput({}, 'minecraft:sugar', { tag: "tfc:sweetener" })
 });

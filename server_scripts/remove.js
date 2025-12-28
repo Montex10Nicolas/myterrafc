@@ -8,4 +8,5 @@ ServerEvents.recipes(event => {
   event.remove('tfc:metal/rod/cast_iron');
   event.remove('spartanweaponry:wooden_arrow');
   event.remove("sophisticatedbackpacks:iron_backpack");
+  event.remove("minecraft:sugar");
 });

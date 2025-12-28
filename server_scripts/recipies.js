@@ -151,19 +151,58 @@ ServerEvents.recipes(event => {
     C: 'minecraft:chest'
   }, 0, 0
   );
+  // event.recipes.tfc.advanced_shaped_crafting(
+  //   Item.of('firmalife:barrel_stave', index ? 4 : 2), [
+  //   "TTS",
+  //   "H  "
+  // ], {
+  //   "T": "firmalife:treated_lumber",
+  //   "S": `tfc:metal/sheet/${sheet}`,
+  //   H: '#tfc:hammers'
+  // }, 0, 0
+  // );
+  //
+  //
 
   const steel_sheets = ['black_steel', 'red_steel', 'blue_steel'];
   steel_sheets.forEach((sheet, index) => {
     event.recipes.tfc.advanced_shaped_crafting(
-      Item.of('firmalife:barrel_stave', index ? 4 : 2), [
-      'TTS',
-      'H  '
+      Item.of('firmalife:compost_tumbler', index ? 4 : 2), [
+      'SCS',
+      'AGA'
     ], {
       S: `tfc:metal/sheet/${sheet}`,
-      T: 'firmalife:treated_lumber',
-      H: '#tfc:hammers'
+      C: 'tfc:composter',
+      A: '#tfc:axles',
+      G: 'tfc:glue'
     }, 0, 0
     );
-  })
+
+    event.recipes.tfc.damage_inputs_shaped_crafting(
+      event.recipes.minecraft.crafting_shaped(
+        Item.of('firmalife:barrel_stave', index ? 4 : 2),
+        [
+          "TTS",
+          "H  "
+        ], {
+        T: "firmalife:treated_lumber",
+        S: `tfc:metal/sheet/${sheet}`,
+        H: "#tfc:hammers"
+      }
+      )
+    );
+  });
+
+  event.recipes.tfc.advanced_shaped_crafting(
+    Item.of('minecraft:iron_nugget', 10), [
+    '   ',
+    ' I ',
+    '   '
+  ], {
+    I: 'tfc:metal/ingot/wrought_iron',
+  }, 0, 0
+  );
+
+
 });
 

@@ -2,7 +2,7 @@
 const colors = ["magenta", "pink", "light_gray", "purple", "white", "cyan", "gray", "orange", "red", "green", "brown", "light_blue", "black", "lime", "yellow", "blue"]
 
 // Only has usefull metals things like weak steel are not presents
-const tfcMetals = ["bismuth", "bismuth_bronze", "black_bronze", "bronze", "brass", "copper", "gold", "nickel", "rose_gold", "silver", "tin", "zinc", "sterling_silver", "wrought_iron", "cast_iron", "pig_iron", "steel", "black_steel", "blue_steel", "red_steel", ""]
+const tfcMetals = ["bismuth", "bismuth_bronze", "black_bronze", "bronze", "brass", "copper", "gold", "nickel", "rose_gold", "silver", "tin", "zinc", "sterling_silver", "wrought_iron", "cast_iron", "pig_iron", "steel", "black_steel", "blue_steel", "red_steel"]
 
 const tfcLogs = [
   "acacia",
@@ -54,4 +54,4 @@ const dfcRocks = [
   "arkose",
   "blueschist",
   "tuff"
-];
+]
