@@ -203,6 +203,15 @@ ServerEvents.recipes(event => {
   }, 0, 0
   );
 
+  event.recipes.tfc.advanced_shaped_crafting(
+    Item.of('minecraft:iron_block', 1), [
+    'III',
+    'III',
+    'III'
+  ], {
+    I: 'tfc:metal/ingot/wrought_iron',
+  }, 0, 0
+  );
 
 });
 

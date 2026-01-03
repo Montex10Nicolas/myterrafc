@@ -36,5 +36,16 @@ ServerEvents.recipes(event => {
     'minecraft:torch',
     'tfc:torch');
 
-  event.replaceInput({}, 'minecraft:sugar', { tag: "tfc:sweetener" })
+  event.replaceInput({}, 'minecraft:sugar', { tag: "tfc:sweetener" });
+
+  event.replaceInput(
+    { mod: "cluttered" },
+    'minecraft:spruce_slab',
+    { tag: "minecraft:wooden_slabs" }
+  );
+
+  event.replaceInput({
+    mod: "cluttered"
+  }, 'minecraft:chest',
+    { tag: "forge:chests/wooden" })
 });

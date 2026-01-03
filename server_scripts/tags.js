@@ -9,6 +9,7 @@ ServerEvents.tags('item', event => {
   event.add('tfc:forge_fuel', '#tfcwoodwork:logs_log');
   event.add('tfc:forge_fuel', '#tfcwoodwork:logs_quarter');
   event.add('tfc:forge_fuel', '#tfcwoodwork:logs_half');
+  event.add('tfc:forge_fuel', '#forge:bark');
 
   event.add('tfc:blast_furnace_fuel', 'tfc:ore/lignite');
 
@@ -18,10 +19,14 @@ ServerEvents.tags('item', event => {
   event.add('tfc:usable_on_tool_rack', 'mcw_tfc_aio:pliers');
   event.add('tfc:usable_on_tool_rack', 'tfc:wool_cloth');
 
-  const clothes = ['sns:black_steel_toe_hiking_boots', 'tfc:metal/boots/black_steel', 'tfc:metal/boots/red_steel'];
+  const clothes = [
+    'sns:black_steel_toe_hiking_boots',
+    'tfc:metal/boots/black_steel',
+    'tfc:metal/boots/red_steel',
+    'tfc:metal/boots/blue_steel'
+  ];
 
   clothes.map(boot => {
-
     event.add('curios:clothes_socks', boot);
     event.add('minecraft:freeze_immune_wearables', boot);
   })
