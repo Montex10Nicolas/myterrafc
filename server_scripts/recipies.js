@@ -128,7 +128,7 @@ ServerEvents.recipes(event => {
     ' C '
   ], {
     S: 'tfc:metal/sheet/black_steel',
-    C: 'minecraft:chest'
+    C: '#forge:chests/wooden'
   }, 0, 0
   );
 
@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
     ' C '
   ], {
     S: 'tfc:metal/sheet/red_steel',
-    C: 'minecraft:chest'
+    C: '#forge:chests/wooden'
   }, 0, 0
   );
 
@@ -147,8 +147,8 @@ ServerEvents.recipes(event => {
     'S S',
     ' C '
   ], {
-    S: 'tfc:metal/sheet/blue_steel',
-    C: 'minecraft:chest'
+    S: '#forge:sheets/blue_steel',
+    C: '#forge:chests/wooden'
   }, 0, 0
   );
   // event.recipes.tfc.advanced_shaped_crafting(
