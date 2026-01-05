@@ -48,4 +48,36 @@ ServerEvents.recipes(event => {
       "amount": 1
     }
   });
+
+  event.custom({
+    type: "tfc:barrel_instant_fluid",
+    "primary_fluid": {
+      "ingredient": "tfc:blue_dye",
+      "amount": 1
+    },
+    "added_fluid": {
+      "ingredient": "tfc:white_dye",
+      "amount": 1
+    },
+    "output_fluid": {
+      "fluid": "tfc:light_blue_dye",
+      "amount": 1
+    }
+  });
+
+  event.custom({
+    type: "tfc:barrel_instant_fluid",
+    "primary_fluid": {
+      "ingredient": "tfc:white_dye",
+      "amount": 1
+    },
+    "added_fluid": {
+      "ingredient": "tfc:blue_dye",
+      "amount": 1
+    },
+    "output_fluid": {
+      "fluid": "tfc:light_blue_dye",
+      "amount": 1
+    }
+  });
 });
