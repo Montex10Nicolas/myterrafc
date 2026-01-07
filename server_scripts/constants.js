@@ -54,4 +54,4 @@ const dfcRocks = [
   "arkose",
   "blueschist",
   "tuff"
-]
+];

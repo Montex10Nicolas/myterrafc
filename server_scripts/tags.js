@@ -33,6 +33,7 @@ ServerEvents.tags('item', event => {
 
   event.add('sns:allowed_in_seed_pouch', 'kubastfca:seeds/tea');
   event.add('sns:allowed_in_seed_pouch', '#tfc:wild_fruits');
+  event.add('sns:allowed_in_seed_pouch', '#tfc:plants');
 
   // event.add('artisanal:powders/copper', 'dfc:metal/powder/copper');
   // event.add('artisanal:powders/iron', 'dfc:metal/powder/cast_iron');
