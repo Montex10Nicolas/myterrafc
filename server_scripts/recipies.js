@@ -213,5 +213,19 @@ ServerEvents.recipes(event => {
   }, 0, 0
   );
 
+  event.remove("firmalife:crafting/bacon");
+  event.recipes.tfc.damage_inputs_shaped_crafting(
+    event.recipes.minecraft.crafting_shaped(
+      Item.of('firmalife:food/bacon'),
+      [
+        "PKS",
+      ], {
+      P: "tfc:food/pork",
+      K: "#forge:tools/knives",
+      S: "tfc:powder/salt"
+    }
+    )
+  );
 });
+
 

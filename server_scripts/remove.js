@@ -9,4 +9,5 @@ ServerEvents.recipes(event => {
   event.remove('spartanweaponry:wooden_arrow');
   event.remove("sophisticatedbackpacks:iron_backpack");
   event.remove("minecraft:sugar");
+  event.remove("firmalife:crafting/bacon");
 });

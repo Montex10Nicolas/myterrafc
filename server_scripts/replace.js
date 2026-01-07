@@ -37,6 +37,7 @@ ServerEvents.recipes(event => {
     'tfc:torch');
 
   event.replaceInput({}, 'minecraft:sugar', { tag: "tfc:sweetener" });
+  event.replaceInput({}, 'minecraft:dried_kelp', 'tfc:food/dried_kelp');
 
   event.replaceInput(
     { mod: "cluttered" },
