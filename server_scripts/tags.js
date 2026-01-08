@@ -61,6 +61,9 @@ ServerEvents.tags('item', event => {
       event.add('rnr:loose_rock_items', `dfc:rock/${type}/${rock}`);
     })
   });
+
+  event.add("tfc:foods/usable_in_sandwich", "kubastfca:pemmican")
+  event.add("firmalife:foods/cooked_meats_and_substitutes", "kubastfca:pemmican")
 });
 
 ServerEvents.tags('block', event => {
@@ -74,6 +77,7 @@ ServerEvents.tags('block', event => {
     'kubastfca:crop/tea',
     'kubastfca:seeds/tea',
   ]
+
   kubastfcaMineable.map((seed) => {
     event.add('tfc:mineable_with_scythe', seed);
     event.add('tfc:mineable_with_knife', seed);
