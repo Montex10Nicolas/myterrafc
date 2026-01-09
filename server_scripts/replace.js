@@ -48,5 +48,26 @@ ServerEvents.recipes(event => {
   event.replaceInput({
     mod: "cluttered"
   }, 'minecraft:chest',
-    { tag: "forge:chests/wooden" })
+    { tag: "forge:chests/wooden" }
+  );
+
+  event.replaceInput({
+    mod: "sophisticatedbackpacks"
+  }, 'minecraft:wooden_sword',
+    { tag: "tfc:swords" });
+  event.replaceInput({
+    mod: "sophisticatedbackpacks"
+  }, 'minecraft:wooden_axe',
+    { tag: "tfc:axes" });
+  event.replaceInput({
+    mod: "sophisticatedbackpacks"
+  }, 'minecraft:wooden_pickaxe',
+    { tag: "tfc:pickaxes" });
+  event.replaceInput({
+    mod: "sophisticatedbackpacks"
+  }, 'minecraft:wooden_shovel',
+    { tag: "tfc:shovels" });
+  event.replaceInput({
+  }, 'minecraft:crafting_table',
+    { tag: "tfc:workbenches" });
 });

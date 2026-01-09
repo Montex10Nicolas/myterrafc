@@ -35,6 +35,27 @@ ServerEvents.recipes(event => {
   }, 0, 0
   );
   event.recipes.tfc.advanced_shaped_crafting(
+    Item.of('sophisticatedbackpacks:netherite_backpack', 1), [
+    ' I ',
+    'IBI',
+    ' I '
+  ], {
+    I: 'tfc:metal/ingot/blue_steel',
+    B: 'sophisticatedbackpacks:diamond_backpack',
+  }, 0, 0
+  );
+  event.recipes.tfc.advanced_shaped_crafting(
+    Item.of('sophisticatedbackpacks:netherite_backpack', 1), [
+    ' I ',
+    'IBI',
+    ' I '
+  ], {
+    I: 'tfc:metal/ingot/red_steel',
+    B: 'sophisticatedbackpacks:diamond_backpack',
+  }, 0, 0
+  );
+
+  event.recipes.tfc.advanced_shaped_crafting(
     Item.of('#minecraft:trapdoor', 2), [
     'LLL',
     'LLL'
